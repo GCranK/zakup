@@ -164,7 +164,52 @@ button:hover {
     animation: spin 1s linear infinite;
     margin-bottom: 10px;
 }
+.tabs {
+    gap: 5px;
+}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 8px;
+        gap: 5px;
+    }
+
+    .tab i {
+        font-size: 16px;
+    }
+
+    .category {
+        width: 85px;
+        padding: 6px;
+    }
+
+    .category i {
+        font-size: 18px;
+    }
+    .item-container span {
+        font-size: 12px;
+    }
+
+    .item-container input {
+        width: 40px;
+        font-size: 12px;
+    }
+
+    .item-container select {
+        width: 60px;
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
